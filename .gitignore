@@ -1,0 +1,85 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+build/
+dist/
+
+# Virtual environment
+streamlitenv/
+backend/.env
+frontend/.env
+
+# Logs and databases
+*.log
+*.sqlite3
+*.db
+*.db-journal
+*.pid
+*.bak
+
+# Local dev & test data
+database/
+cache/
+*.tmp
+*.temp
+
+# Ollama models
+ollama_models/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Pytest cache
+.pytest_cache/
+
+# mypy & pylint
+.mypy_cache/
+.pytype/
+coverage.xml
+htmlcov/
+.cache
+
+# VS Code
+.vscode/
+
+# Mac OS
+.DS_Store
+
+# ChromaDB Vector Store
+chroma_data/
+chroma_db/
+chroma_index/
+
+# Python env config
+*.env
+.env.*
+
+# Streamlit
+frontend/.streamlit/secrets.toml
+frontend/.streamlit/config.toml
+
+# __pycache__ anywhere
+**/__pycache__/
+
+# Compiled files
+*.pyd
+*.pyo
+
+# Extra files you can ignore
+frontend/screenshots/
+
+

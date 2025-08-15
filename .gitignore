@@ -32,10 +32,15 @@ frontend/.env
 *.bak
 
 # Local dev & test data
-database/
+
 cache/
 *.tmp
 *.temp
+# Ignore everything in /database
+database/*
+
+# But NOT Python files
+!database/*.py
 
 # Ollama models
 ollama_models/

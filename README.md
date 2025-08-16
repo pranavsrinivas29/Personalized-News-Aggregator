@@ -183,3 +183,5 @@ Return JSON:
 Per-article bullets:
 {bullets}
 Only return JSON.
+
+🎬 [Demo Video](demo_video/demo_video.mov)

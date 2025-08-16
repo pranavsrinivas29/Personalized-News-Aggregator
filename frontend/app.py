@@ -17,7 +17,6 @@ from api_client import get_news as api_get_news, track_search, get_personal_topi
 
 st.set_page_config(page_title="Personalized News Aggregator", layout="wide")
 st.title("Personalized News Aggregator")
-st.caption("✅ frontend ready")
 
 # Session state defaults
 st.session_state.setdefault("query", "")

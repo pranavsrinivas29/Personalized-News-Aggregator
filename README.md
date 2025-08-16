@@ -184,10 +184,6 @@ Per-article bullets:
 {bullets}
 Only return JSON.
 
-## 🎥 Watch the Demo
-
-![Watch the video]()
-
 
 ## 🎥 Watch the Demo
 

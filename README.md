@@ -184,4 +184,11 @@ Per-article bullets:
 {bullets}
 Only return JSON.
 
-🎬 [Demo Video](demo_video/demo_video.mov)
+## 🎥 Watch the Demo
+
+![Watch the video]()
+
+
+## 🎥 Watch the Demo
+
+[![Watch the video](assets/app.png)](https://youtu.be/UvqC-XXiFVE?si=h6UDRc-mNQ0VrChR)

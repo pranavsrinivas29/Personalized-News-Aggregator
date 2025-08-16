@@ -20,6 +20,7 @@ An intelligent, AI-powered news aggregator that fetches real-time articles based
 
 ## 🗂️ Project Structure
 
+```text
 project-root/
 ├── frontend/              # Streamlit frontend app
 │   ├── app.py             # Main Streamlit app
@@ -36,6 +37,7 @@ project-root/
 │   ├── content_extractor.py
 │   ├── vector_store.py
 │   └── ...
+```
 
 ## Setup Backend
 
@@ -184,6 +186,44 @@ Per-article bullets:
 {bullets}
 Only return JSON.
 
+## 🧠 LLM and Embeddings Used
+
+### 🔮 Large Language Model (LLM)
+
+- **Model**: `mistral:latest`
+- **Provider**: [Ollama](https://ollama.com/)
+- **Local API Endpoint**: `http://localhost:11434/api/generate`
+- **Used In**: `rag.py` via `_ollama_generate()` function
+- **Purpose**:
+  - Generate 3–5 bullet summaries per article (`MAP_PROMPT`)
+  - Condense multiple article summaries into a personalized summary (`REDUCE_PROMPT`)
+
+> Mistral is an efficient open-weight model that offers fast and accurate performance for summarization tasks. It's served locally via Ollama for low-latency inference.
+
+---
+
+### 🧠 Embeddings
+
+- **Model**: `nomic-embed-text-v1`
+- **Provider**: [Nomic AI](https://huggingface.co/nomic-ai/nomic-embed-text-v1)
+- **Used In**: `vector_store.py` and `rag.py`
+- **Purpose**:
+  - Generate dense vector representations of article content chunks
+  - Perform similarity-based retrieval of relevant articles from the vector store
+
+---
+
+### 🗂️ Vector Store
+
+- **Library**: `ChromaDB`
+- **Persistent Location**: `database/chroma/`
+- **Used In**: `vector_store.py`
+- **Purpose**:
+  - Store vector embeddings of articles by `user_id`, `link`, and `chunk`
+  - Query semantically relevant content for user queries
+---
+
+These components form the core of the Retrieval-Augmented Generation (RAG) pipeline that powers the intelligent summarization and personalized content delivery.
 
 ## 🎥 Watch the Demo
 
